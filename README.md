@@ -1,21 +1,20 @@
 # KMedoidStorageProcedures
+ 
+ Trabalho realizado como parte da disciplina de banco de dados 2, onde tinha como exigencia ser implementado em storage procedures.
+ 
+## Obejtivo
  Trabalho teve como objetivo implementar o algoritmo k-medoid com a intenção da identificação de grupos de espécies no dataset iris.
  
- Como era parte da disciplina de banco de dados 2, tinha como exigencia ser implementado em storage procedures.
- 
- 
-criação de tabela para armazenar os dados do dataset iris
-uma outra tabela para guardar dadso nosrmalizados
+## Tabelas
+* tabela para armazenar os dados do dataset iris
+* a tabela para guardar dadso nosrmalizados
+* tabela para guardar as id do centroid vindo da tabela iris
 
-uma tabela para guardar as id do centroid vindo da tabela iris
-
-função para normalização do dataset
-
-função para escolher aleatoriamente uma tupla no dataset
-
-função para calcular a distancia da tupla escolhida para todas as outras tuplas
-
-soma de um ponto para todos os outros, a somatoria que resultar um menor valor será um próximo candidato para ser um centroid
+## Funções
+* função para normalização do dataset
+* função para escolher aleatoriamente uma tupla no dataset
+* função para calcular a distancia da tupla escolhida para todas as outras tuplas
+* soma de um ponto para todos os outros, a somatoria que resultar um menor valor será um próximo candidato para ser um centroid
 
 # Chamadas de funções
 * Chama a função para normalizar os dados
