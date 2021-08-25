@@ -6,11 +6,11 @@
  Trabalho teve como objetivo implementar o algoritmo k-medoid com a intenção da identificação de grupos de espécies no dataset iris.
  
 ## Principais Tabelas
-* tabela para armazenar os dados do dataset iris
-* tabela para guardar dados normalizados
-* tabela para guardar as id do centroid vindo da tabela iris
-* tabela para guardar as distancias dos centroids para todos os outros pontos
-* uma outra tabela também intitula distância porém essa agora guardando as tuplas já com uma primeira identificação de cluster (ouve a necessidade da criação dessa nova tabela pois a outra tabela distancia seria usada novamente e não poderia ter a tag de cluster)
+* Tabela para armazenar os dados do dataset iris
+* Tabela para guardar dados normalizados
+* Tabela para guardar as id do centroid vindo da tabela iris
+* Tabela para guardar as distancias dos centroids para todos os outros pontos
+* Tabela intitulada distância porém essa agora guardando as tuplas já com uma primeira identificação de cluster (ouve a necessidade da criação dessa nova tabela pois a outra tabela distancia seria usada novamente e não poderia ter a tag de cluster)
 
 ## Principais Funções
 * função para normalização do dataset
