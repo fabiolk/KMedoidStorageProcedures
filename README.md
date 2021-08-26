@@ -1,34 +1,36 @@
 # KMedoidStorageProcedures
  
- Trabalho realizado como parte da disciplina de banco de dados 2, onde tinha como exigencia ser implementado em storage procedures.
+ Trabalho realizado como parte da disciplina de banco de dados 2, tinha como exigência ser implementado em storage procedures.
  
-## Obejtivo
- Trabalho teve como objetivo implementar o algoritmo k-medoid com a intenção da identificação de grupos de espécies no dataset iris.
+## Objetivo
+
+ Tem como objetivo implementar o algoritmo k-medoid com a intenção de identificar grupos de espécies no dataset iris.
  
 ## Principais Tabelas
 * Tabela para armazenar os dados do dataset iris
-* Tabela para guardar dados normalizados
-* Tabela para guardar as id do centroid vindo da tabela iris
-* Tabela para guardar as distancias dos centroids para todos os outros pontos
-* Tabela intitulada distância porém essa agora guardando as tuplas já com uma primeira identificação de cluster (ouve a necessidade da criação dessa nova tabela pois a outra tabela distancia seria usada novamente e não poderia ter a tag de cluster)
+* Guardar dados normalizados
+* Guardar as id dos centroid vindo da tabela iris
+* Guardar as distâncias dos centroids para todos os outros pontos
+* Tabela intitulada distância, que guarda as tuplas já com uma primeira identificação de cluster (houve a necessidade da criação dessa nova tabela pois a outra tabela distância seria usada novamente e não poderia ter a tag de cluster)
 
 ## Principais Funções
-* função para normalização do dataset
-* função para escolher aleatoriamente uma tupla no dataset para ser um centroid
-* função para calcular a distancia da tupla de centroid escolhida para todas as outras tuplas
-* função para aplicar um tag de cluster a partir das menores distancia calculadas na função anterior
-* soma de um ponto para todos os outros, a somatoria que resultar um menor valor será um próximo candidato para ser um centroid
+* Função para normalização do dataset
+* Escolher aleatoriamente uma tupla no dataset para ser um centroid
+* Calcular a distância da tupla de centroid escolhida para todas as outras tuplas
+* Aplicar um tag de cluster a partir das menores distância calculadas na função anterior
+* Soma de um ponto para todos os outros, a somatória que resultar em menor valor será um próximo candidato para ser um centroid
 
 ## Chamadas de funções
 * Chama a função para normalizar os dados
-* Chama a função para gerar centroid, nela é passada como parâmetro a quantidade de centroid
-* Chama a função que calcula a distância dos centroid escolhidos na função anterior para todos os outros, ou seja, em um dataset com 150 tuplas e 3 centroids será gerada 497 tuplas
-* Chama uma função para gerar um primeiro cluster, ou seja, se foi escolhido três centroids será gerado 3 clusters, onde uma tupla fará parte de um determinado cluster caso a distancia dela seja menor comparada aos outros centroids
-* Chama a função que calcula a distancia de todas para todas tuplas
-* faz a soma para descobrir o proximo candidato a centroid pois após fazer a somatória a tupla que tiver menor valor de soma entre todas as outras significa que tem semelhanças logo fazem parte da mesma subespécie de iris
+* Gerar centroid, nela é passada como parâmetro a quantidade de centroidS
+* Calcula a distância dos centroid escolhidos na função anterior para todos os outros, ou seja, em um dataset com 150 tuplas e 3 centroids será gerada 497 tuplas
+* Gerar um primeiro cluster, ou seja, se foi escolhido três centroids será gerado 3 clusters, onde uma tupla fará parte de um determinado cluster caso a distância dela seja menor comparada aos outros centroids
+* Calcula a distância de todas para todas tuplas
+* Faz a soma para descobrir o próximo candidato a centroid, pois após fazer a somatória a tupla que tiver menor valor de soma entre todas as outras mostra que tem semelhanças. Logo fazem parte da mesma subespécie de iris
 
 ## Melhorias
 * Evitar repetição de tabelas e funções
-* Fazer interação com usuário ao invéz de passagem de parâmetro direto pela função
-* Implementação de convergencia da função e redução do erro quadrático
+* Fazer interação com usuário ao invés de passagem de parâmetro direto pela função
+* Implementação de convergência da função e redução do erro quadrático
 * Implementar visualização final por gráficos
+
