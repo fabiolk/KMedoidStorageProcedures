@@ -4,7 +4,7 @@
  
 ## Objetivo
 
- Tem como objetivo implementar o algoritmo k-medoid com a intenção de identificar grupos de espécies no dataset iris.
+ Implementar o algoritmo k-medoid com a intenção de identificar grupos de espécies no dataset iris.
  
 ## Principais Tabelas
 * Tabela para armazenar os dados do dataset iris
